@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomConnectionHandler", "CustomConnectionHandler\CustomConnectionHandler.vcxproj", "{7687C698-C24F-42EA-8C14-9C6F0D42DD60}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Publisher", "Publisher\Publisher.vcxproj", "{BC9291E4-9BCA-4616-87C1-5D790995600B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7687C698-C24F-42EA-8C14-9C6F0D42DD60} = {7687C698-C24F-42EA-8C14-9C6F0D42DD60}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Consumer", "Consumer\Consumer.vcxproj", "{7DF833CF-940D-4CE4-80C8-3CBFF8410E7C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7687C698-C24F-42EA-8C14-9C6F0D42DD60} = {7687C698-C24F-42EA-8C14-9C6F0D42DD60}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7687C698-C24F-42EA-8C14-9C6F0D42DD60}.Debug|x86.ActiveCfg = Debug|Win32
+		{7687C698-C24F-42EA-8C14-9C6F0D42DD60}.Debug|x86.Build.0 = Debug|Win32
+		{BC9291E4-9BCA-4616-87C1-5D790995600B}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC9291E4-9BCA-4616-87C1-5D790995600B}.Debug|x86.Build.0 = Debug|Win32
+		{7DF833CF-940D-4CE4-80C8-3CBFF8410E7C}.Debug|x86.ActiveCfg = Debug|Win32
+		{7DF833CF-940D-4CE4-80C8-3CBFF8410E7C}.Debug|x86.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D63C67DE-971B-4BF3-9AC2-7F0F03EDE76D}
+	EndGlobalSection
+EndGlobal
