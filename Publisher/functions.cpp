@@ -102,7 +102,6 @@ int parseArguments(int argc, char *argv[], int & MaxFrequency, std::string & ip_
 		MaxFrequency = MaxFrequency = std::atoi(number_input.c_str());
 	}
 	else if (argc == 2)
-	if (argc == 2)
 	{
 		std::string input(argv[1]);
 		if (input.compare("--help") == 0 || input.compare("-h") == 0)
