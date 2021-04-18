@@ -1,7 +1,7 @@
 ABOUT
 ========
 An example of two (Publisher/Consumer) C++ command line applications communicating each other through RabbitMQ Message Broker.
-Consumer publishes indexed messages at a given rate to RabbitMQ server and the Consumer acknowledges and prints out the messages from the server.
+Publisher publishes indexed messages at a given rate to RabbitMQ server and the Consumer acknowledges and prints out the messages from the server.
 Applications use Custom Connection Handler static library which was implemented with [AMQP-CPP](https://github.com/CopernicaMarketingSoftware/AMQP-CPP) C++ library as an underlying RabbitMQ Client.
 Built and tested under Windows 10 x64 platform only.
 
